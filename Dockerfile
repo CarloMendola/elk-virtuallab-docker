@@ -1,6 +1,6 @@
 FROM centos:centos8
 RUN useradd elk 
-RUN yum install -y java-1.8.0-openjdk-headless.x86_64 wget
+RUN yum install -y java-1.8.0-openjdk-headless.x86_64 wget unzip
 WORKDIR /home/elk
 USER elk:elk
 RUN wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.3.1-linux-x86_64.tar.gz
